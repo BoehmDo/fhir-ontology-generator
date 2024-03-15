@@ -1,0 +1,1 @@
+{"resourceType":"NamingSystem","id":"ExliquidSpecimen","name":"ExliquidSpecimen","status":"draft","date":"2022-08-19","description":"Identifikation der Probe innhalb des Projekts EXLIQUID","kind":"identifier","uniqueId":[{"type":"uri","value":"http://dktk.dkfz.de/fhir/NamingSystem/exliquid-specimen","preferred":true}]}
