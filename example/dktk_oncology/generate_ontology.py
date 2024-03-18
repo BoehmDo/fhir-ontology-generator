@@ -286,12 +286,11 @@ if __name__ == '__main__':
     onto_result_dir = "generated-ontology"
     differential_folder = "resources/differential"
     generate_result_folder(onto_result_dir)
+    with open("resources/required_packages.json", "r") as f:
+        required_packages = json.load(f)
 
     if args.download_packages:
         log.info(f"# Downloading Packages...")
-        with open("resources/required_packages.json", "r") as f:
-            required_packages = json.load(f)
-
         download_simplifier_packages(required_packages)
 
     if args.generate_snapshot:

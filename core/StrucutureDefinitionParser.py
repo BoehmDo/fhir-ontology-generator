@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import logging
 import os
 import re
 from collections import namedtuple
@@ -71,6 +72,11 @@ def get_profiles_with_base_definition(fhir_dataset_dir: str, base_definition: st
     :param base_definition: base definition
     :return: generator of profiles that have the given base definition
     """
+
+    print("get profiles")
+    print(fhir_dataset_dir)
+    print(base_definition)
+
     for module_dir in [folder for folder in os.scandir(fhir_dataset_dir) if folder.is_dir()]:
         files = [file for file in os.scandir(f"{module_dir.path}/package") if file.is_file()
                  and file.name.endswith("snapshot.json")]

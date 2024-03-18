@@ -10,5 +10,27 @@
   ],
   "Strahlentherapie": [
     "Strahlentherapie"
+  ],
+  "Primaerdiagnose": [
+    "Primaerdiagnose"
+  ],
+  "Fernmetastasen": [
+    "Fernmetastasen"
+  ],
+  "Specimen": [],
+  "Bioprobe": [
+    "Bioprobe"
+  ],
+  "TNMc": [
+    "TNMc"
+  ],
+  "TNMp": [
+    "TNMp"
+  ],
+  "Histologie": [
+    "Histologie"
+  ],
+  "Genetische Variante": [
+    "GenetischeVariante"
   ]
 }
