@@ -1,14 +1,12 @@
 {
-  "updated": "2024-03-18T12:01:00.771819+01:00",
+  "updated": "2024-03-21T21:46:52.363981+01:00",
   "dependencies": {
     "de.dktk.oncology": "1.3.0",
-    "de.basisprofil.r4": "1.3.2",
     "hl7.fhir.r4.core": "4.0.1",
     "de.bbmri.fhir": "1.1.0",
     "hl7.fhir.uv.ips": "1.0.0",
+    "de.basisprofil.r4": "1.4.0",
     "de.medizininformatikinitiative.kerndatensatz.biobank": "1.0.3"
   },
-  "missing": {
-    "de.basisprofil.r4": "1.4.0"
-  }
+  "missing": {}
 }
