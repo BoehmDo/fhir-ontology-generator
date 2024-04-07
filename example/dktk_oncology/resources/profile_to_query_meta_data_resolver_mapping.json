@@ -50,5 +50,11 @@
   ],
   "Vitalstatus": [
     "Vitalstatus"
+  ],
+  "OncoSpecimen": [
+    "OncoSpecimen"
+  ],
+  "Patient":[
+    "Patient"
   ]
 }

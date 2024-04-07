@@ -26,12 +26,37 @@ class ValueDefinition:
     min: float = None
     max: float = None
     referenceCriteriaSet: CriteriaSet = None
+    referencedOnlyOnce: bool = False
+    singleReference: dict = None
     optional: bool = True
 
     def to_dict(self):
         data = asdict(self)
         if self.referenceCriteriaSet is not None:
             data['referenceCriteriaSet'] = self.referenceCriteriaSet.url
+            if len(self.referenceCriteriaSet.contextualized_term_codes) == 1:
+                data['referencedOnlyOnce'] = True
+
+                context = self.referenceCriteriaSet.contextualized_term_codes[0][0]
+                termCodes = self.referenceCriteriaSet.contextualized_term_codes[0][1]
+                data['singleReference'] = {
+                    'context': {
+                        'code': ("" if context.code is None else context.code),
+                        'display': ("" if context.display is None else context.display),
+                        'system': ("" if context.system is None else context.system)
+                    },
+                    'termCodes': [
+                        {
+                            'code': ("" if termCodes.code is None else termCodes.code),
+                            'display': ("" if termCodes.display is None else termCodes.display),
+                            'system': ("" if termCodes.system is None else termCodes.system)
+                        },
+                    ]
+                }
+
+                print("Single reference")
+                print("URL: " + self.referenceCriteriaSet.url)
+                print(data['singleReference'])
         return data
 
 
