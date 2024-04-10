@@ -1,5 +1,5 @@
 {
-  "name": "Patient",
+  "name": "Survival",
   "resource_type": "Patient",
   "context": {
     "system": "bzkf.dktk.oncology",
@@ -7,9 +7,5 @@
     "display": "Patient"
   },
   "term_code_defining_id": "Patient.deceased[x]:deceasedBoolean",
-  "attribute_defining_id_type_map": {
-    "Patient.deceased[x]:deceasedBoolean": "",
-    "Patient.gender": ""
-  },
   "time_restriction_defining_id": "Patient.deceased[x]:deceasedDateTime"
 }

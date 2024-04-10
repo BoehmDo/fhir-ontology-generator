@@ -55,6 +55,7 @@
     "OncoSpecimen"
   ],
   "Patient":[
-    "Patient"
+    "PatientAge",
+    "PatientGender"
   ]
 }
