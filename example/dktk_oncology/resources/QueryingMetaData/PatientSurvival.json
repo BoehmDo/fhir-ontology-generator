@@ -3,9 +3,13 @@
   "resource_type": "Patient",
   "context": {
     "system": "bzkf.dktk.oncology",
-    "code": "Patient",
-    "display": "Patient"
+    "code": "PatientSurvival",
+    "display": "Patient Survival"
   },
-  "term_code_defining_id": "Patient.deceased[x]:deceasedBoolean",
+  "term_codes": [{
+    "system": "http://snomed.info/sct",
+    "code": "419099009",
+    "display": "Verstorben"
+  }],
   "time_restriction_defining_id": "Patient.deceased[x]:deceasedDateTime"
 }

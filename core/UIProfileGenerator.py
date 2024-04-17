@@ -143,6 +143,9 @@ class UIProfileGenerator:
             # value_definition.allowedUnits = get_termcodes_from_onto_server(AGE_UNIT_VALUE_SET)
             value_definition.allowedUnits = [TermCode(UCUM_SYSTEM, "a", "a"), TermCode(UCUM_SYSTEM, "mo", "mo"),
                                              TermCode(UCUM_SYSTEM, "wk", "wk"), TermCode(UCUM_SYSTEM, "d", "d")]
+        elif value_type == "boolean":
+            value_definition.type = "quantity"
+            value_definition.allowedUnits = [TermCode(UCUM_SYSTEM, "true", "true"), TermCode(UCUM_SYSTEM,"false", "false")]
         elif value_type == "integer":
             value_definition.type = "quantity"
         elif value_type == "calculated":

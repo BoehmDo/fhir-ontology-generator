@@ -3,8 +3,8 @@
   "resource_type": "Patient",
   "context": {
     "system": "bzkf.dktk.oncology",
-    "code": "Patient",
-    "display": "Patient"
+    "code": "PatientAge",
+    "display": "Patient Age"
   },
   "value_defining_id": "Patient.birthDate",
   "value_type": "Age",
@@ -12,5 +12,6 @@
     "system": "http://snomed.info/sct",
     "code": "424144002",
     "display": "Gegenwärtiges chronologisches Alter"
-  }]
+  }],
+  "time_restriction_defining_id": "Patient.birthDate"
 }

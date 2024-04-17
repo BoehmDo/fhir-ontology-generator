@@ -2,11 +2,8 @@
   "SD_DKTK_ONC_Systemtherapie": [
     "Systemtherapie"
   ],
-  "SD_DKTK_ONC_Operation": [
+  "Operation": [
     "Operation"
-  ],
-  "SD_DKTK_ONC_Strahlentherapie": [
-    "Strahlentherapie"
   ],
   "Strahlentherapie": [
     "Strahlentherapie"
@@ -16,10 +13,6 @@
   ],
   "Fernmetastasen": [
     "Fernmetastasen"
-  ],
-  "Specimen": [],
-  "Bioprobe": [
-    "Bioprobe"
   ],
   "TNMc": [
     "TNMc"
@@ -56,6 +49,8 @@
   ],
   "Patient":[
     "PatientAge",
-    "PatientGender"
+    "PatientGender",
+    "PatientSurvival"
   ]
+
 }

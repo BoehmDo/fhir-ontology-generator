@@ -3,8 +3,8 @@
   "resource_type": "Patient",
   "context": {
     "system": "bzkf.dktk.oncology",
-    "code": "Patient",
-    "display": "Patient"
+    "code": "PatientGender",
+    "display": "Patient Gender"
   },
   "term_codes": [
     {

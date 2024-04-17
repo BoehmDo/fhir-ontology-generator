@@ -59,10 +59,9 @@ class SearchParameterResolver(ABC):
                                        result_without_as_cast[key.split(" as ")[0]]) for key, value in result.items()])
             else:
                 missing_search_parameters = [key for key, value in result.items() if not value]
-
                 # Get search parameters for the shortened paths
                 result_without_last_path_element = self.find_search_parameter(
-                    [shortened_path(path) for path in missing_search_parameters])
+                    [shortened_path(path) for path in missing_search_parameters if path != shortened_path(path)])
                 for path in result.keys():
                     for shortened_path in result_without_last_path_element.keys():
                         if shortened_path in path:

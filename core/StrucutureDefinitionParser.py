@@ -266,7 +266,8 @@ def get_selectable_concepts(concept_defining_element, profile_name: str = "") ->
     """
     if binding := concept_defining_element.get("binding"):
         if value_set_url := binding.get("valueSet"):
-            return get_termcodes_from_onto_server(value_set_url)
+            result = get_termcodes_from_onto_server(value_set_url)
+            return result
         else:
             raise InvalidValueTypeException(f"No value set defined in element: {str(binding)}"
                                             f" in profile: {profile_name}")
@@ -515,6 +516,9 @@ def try_get_term_code_from_sub_elements(fhir_profile_snapshot, parent_coding_id,
             return TermCode(system_element["fixedUri"], code_element["fixedCode"],
                             get_term_code_display_from_onto_server(system_element["fixedUri"],
                                                                    code_element["fixedCode"]))
+
+        elif "fixedUri" in system_element and system_element["fixedUri"] == 'http://fhir.de/CodeSystem/bfarm/ops':
+            return TermCode(system_element["fixedUri"], "CodingOPS", "CodingOPS")
 
     return None
 
