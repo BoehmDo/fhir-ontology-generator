@@ -49,8 +49,7 @@
   ],
   "Patient":[
     "PatientAge",
-    "PatientGender",
-    "PatientSurvival"
+    "PatientGender"
   ]
 
 }

@@ -6,9 +6,8 @@
     "code": "Systemtherapie",
     "display": "Systemtherapie"
   },
-  "term_code_defining_id": "MedicationStatement.medication[x]",
+  "term_code_defining_id": "MedicationStatement.category",
   "attribute_defining_id_type_map": {
-    "MedicationStatement.category": "",
     "(MedicationStatement.extension:Intention).value[x]": "",
     "(MedicationStatement.extension:StellungZurOp).value[x]": "",
     "(MedicationStatement.extension:Protokoll).value[x]": ""
