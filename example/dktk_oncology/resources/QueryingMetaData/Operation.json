@@ -8,7 +8,6 @@
     },
     "term_code_defining_id": "Procedure.category",
     "attribute_defining_id_type_map": {
-        "Procedure.code": "",
         "(Procedure.extension:Intention).value[x]": "",
         "(Procedure.reasonReference).code.coding:icd10-gm": "reference"
     },

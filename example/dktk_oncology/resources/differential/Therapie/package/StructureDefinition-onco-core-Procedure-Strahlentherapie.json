@@ -89,6 +89,15 @@
         "mustSupport": true
       },
       {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://snomed.info/sct?fhir_vs=ecl/<< 1287742003 "
+        }
+      },
+      {
         "id": "Procedure.category",
         "path": "Procedure.category",
         "min": 1,

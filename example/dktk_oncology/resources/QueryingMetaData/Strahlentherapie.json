@@ -6,7 +6,7 @@
         "code": "Strahlentherapie",
         "display": "Strahlentherapie"
     },
-    "term_code_defining_id": "Procedure.category",
+    "term_code_defining_id": "Procedure.code",
     "attribute_defining_id_type_map": {
         "(Procedure.extension:Intention).value[x]": "",
         "(Procedure.extension:StellungZurOp).value[x]": "",
