@@ -101,7 +101,20 @@ class TermCode:
         return NotImplemented
 
     def __repr__(self):
-        return self.system + " " + self.code + " " + self.version
+        out = ""
+        if self.system is not None:
+            out += "system: " + self.system
+        else:
+            out += "system: "
+        if self.version is not None:
+            out += "version: " + self.version
+        else:
+            out += "version: "
+        if self.code is not None:
+            out += "code: " + self.code
+        else:
+            out += "code: "
+        return out
 
 
 class ValueDefinition:

@@ -26,5 +26,10 @@
     "histology": "Histologie",
     "genetischeVariante": "Genetische Variante",
     "tnmc": "TNMc",
-    "tnmp": "TNMp"
+    "tnmp": "TNMp",
+    "code": "Code",
+    "medication[x]": "Medikation",
+    "OPS": "OPS",
+    "primaertumorSeitenlokalisation": "primaertumorSeitenlokalisation",
+    "condition": "condition"
 }

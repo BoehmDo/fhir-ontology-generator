@@ -4,7 +4,7 @@ import json
 from dataclasses import dataclass, field
 from typing import List, Optional
 
-from sortedcontainers import SortedSet
+from sortedcontainers import SortedList
 
 from model.UIProfileModel import VALUE_TYPE_OPTIONS
 from model.UiDataModel import TermCode
@@ -202,14 +202,14 @@ class PathlingMapping:
 
 class MapEntryList:
     def __init__(self):
-        self.entries = SortedSet()
+        self.entries = SortedList()
 
     def to_json(self):
         self.entries = list(self.entries)
         return json.dumps(self.entries, default=lambda o: del_none(o.__dict__), sort_keys=True, indent=4)
 
     def get_code_systems(self):
-        code_systems = SortedSet()
+        code_systems = SortedList()
         for entry in self.entries:
             code_systems.add(entry.key.system)
             for fixed_criteria in entry.fixedCriteria:

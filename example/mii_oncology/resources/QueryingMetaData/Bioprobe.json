@@ -1,0 +1,13 @@
+{
+  "name": "Bioprobe",
+  "resource_type": "Specimen",
+  "context": {
+    "system": "mii.oncology",
+    "code": "Onkologie",
+    "display": "Onkologie"
+  },
+  "term_code_defining_id": "Specimen.type",
+  "attribute_defining_id_type_map": {
+  },
+  "time_restriction_defining_id": "Specimen.collection.collected[x]:collectedDateTime"
+}
