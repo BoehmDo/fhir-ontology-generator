@@ -1,0 +1,17 @@
+{
+  "resourceType": "SearchParameter",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii_sp_imagingstudy_serieslaterality",
+  "version": "1.0.3",
+  "name": "MII_SP_ImagingStudy_SeriesLaterality",
+  "status": "active",
+  "date": "2023-05-09",
+  "description": "Suche im Code der series laterality",
+  "code": "mii-series-laterality-code",
+  "base": [
+    "ImagingStudy"
+  ],
+  "type": "token",
+  "expression": "ImagingStudy.series.laterality",
+  "multipleOr": true,
+  "multipleAnd": true
+}
