@@ -1822,7 +1822,7 @@
           ],
           "strength": "example",
           "description": "A code to identify a specific procedure .",
-          "valueSet": "http://hl7.org/fhir/ValueSet/procedure-code"
+          "valueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/< 387713003 "
         },
         "mapping": [
           {
@@ -5990,6 +5990,11 @@
             }
           ],
           "rules": "open"
+        },
+        "binding": {
+          "strength": "extensible",
+          "description": "OPS-Codes",
+          "valueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/< 387713003"
         }
       },
       {
@@ -6003,6 +6008,7 @@
               "http://fhir.de/StructureDefinition/CodingOPS"
             ]
           }
+
         ]
       },
       {

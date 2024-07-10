@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "http://dktk.dkfz.de/fhir/StructureDefinition/onco-core-MedicationStatement-Systemtherapie",
   "version": "0.9.0",
-  "name": "SD_DKTK_ONC_Systemtherapie",
+  "name": "Systemtherapie",
   "status": "active",
   "description": "Umfasst die Chemotherapie und alle Therapiearten, die nicht unter OP-Daten oder Strahlentherapie fällt",
   "fhirVersion": "4.0.0",
@@ -5534,9 +5534,9 @@
               "valueString": "MedicationCode"
             }
           ],
-          "strength": "example",
+          "strength": "extensible",
           "description": "A coded concept identifying the substance or product being taken.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/medication-codes"
+          "valueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/< 410942007 OR < 373873005 OR < 106181007"
         },
         "mapping": [
           {
@@ -7587,7 +7587,11 @@
             "code": "CodeableConcept"
           }
         ],
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/<! 410942007 OR <! 373873005 OR <! 106181007"
+        }
       },
       {
         "id": "MedicationStatement.medication[x].text",

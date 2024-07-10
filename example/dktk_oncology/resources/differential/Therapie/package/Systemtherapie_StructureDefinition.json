@@ -248,6 +248,10 @@
             "code": "CodeableConcept"
           }
         ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/<! 410942007 OR <! 373873005 OR <! 106181007"
+        },
         "mustSupport": true
       },
       {

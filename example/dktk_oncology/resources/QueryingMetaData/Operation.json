@@ -6,7 +6,7 @@
         "code": "Operation",
         "display": "Operation"
     },
-    "term_code_defining_id": "Procedure.category",
+    "term_code_defining_id": "Procedure.code",
     "attribute_defining_id_type_map": {
         "(Procedure.extension:Intention).value[x]": "",
         "(Procedure.reasonReference).code.coding:icd10-gm": "reference"

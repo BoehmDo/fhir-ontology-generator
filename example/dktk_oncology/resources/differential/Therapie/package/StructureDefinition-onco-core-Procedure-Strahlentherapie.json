@@ -94,7 +94,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://snomed.info/sct?fhir_vs=ecl/<< 1287742003 "
+          "valueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/%3C%3C1287742003"
         }
       },
       {
