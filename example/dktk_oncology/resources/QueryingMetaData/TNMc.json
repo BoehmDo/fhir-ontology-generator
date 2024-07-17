@@ -9,7 +9,7 @@
   "term_code_defining_id": "Observation.code.coding",
   "value_defining_id": "Observation.value[x]",
   "attribute_defining_id_type_map": {
-    "Observation.component:TNM-T.value[x]": "",
+    "Observation.component:TNM-T.value[x].coding.code": "",
     "Observation.component:TNM-N.value[x]": "",
     "Observation.component:TNM-M.value[x]": "",
     "Observation.component:TNM-y-Symbol.value[x]": "",
